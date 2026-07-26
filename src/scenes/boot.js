@@ -255,7 +255,7 @@ export default class Boot extends Phaser.Scene {
         progressBar.destroy();
         progressBox.destroy();
         loadingText.destroy();
-        this.scene.start('mainmenu');
+        this.scene.start('entradaMazmorraBosque');
     });
   }
 }

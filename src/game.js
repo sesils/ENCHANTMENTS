@@ -22,6 +22,7 @@ import Entrada_ciudad from './scenes/entrada_ciudad.js';
 import ciudad from './scenes/ciudad.js'
 import { SCENE } from './constants.js';
 import CreditsScene from './credits.js';
+import EntradaMazmorraBosque from './scenes/entradaMazmorraBosque.js'
 /**
  * Inicio del juego en Phaser. Creamos el archivo de configuración del juego y creamos
  * la clase Game de Phaser, encargada de crear e iniciar el juego.
@@ -35,7 +36,7 @@ let config = {
         mode: Phaser.Scale.FIT
     },
     pixelArt: true,
-    scene: [Boot, MainMenu, CreditsScene, IntroStoryScene, Bosque,zBosque,zonaLago, Entrada_mazmorra, MazmorraInicial, Mazmorra, HabitacionCofre, HabitacionBoss,
+    scene: [Boot, EntradaMazmorraBosque, MainMenu, CreditsScene, IntroStoryScene, Bosque,zBosque,zonaLago, Entrada_mazmorra, MazmorraInicial, Mazmorra, HabitacionCofre, HabitacionBoss,
         Entrada_ciudad,ciudad,Laberinto, LaberintoFinal, EntradaCueva, Cueva, GameOver, InteriorScene, UIScene, InventoryScene],
     physics: {
         default: 'arcade',
